@@ -6,48 +6,85 @@
         <meta name="description" content="Book Key Tools writted by "/>
         <meta name="author" content="Sebastian Litter "/>
         <meta name="keywords" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./keytools.css">
         <script src="keytools.js"></script>
     </head>
 
     <body>
         <header>
-            <img src="assets/header.jpg" alt="puzzle">
-            <h1> BOOK </h1>
+            <div class="container-header">
+                <img src="assets/header.jpg" alt="puzzle">
+                
+                <div class="title_header_first">Key Tools of</div>
+                <div class="title_header_second">WRITING & RESEARCH</div>
+                <div class="title_header_third">A Guide for the Student Writer</div>
+            </div>
+            
+            
         </header>
         
             <nav>
-                <ul>
-                    <li>The author</li>
-                    <li>The book</li>
-                    <li>Link to ancillary Material</li>
-                    <li>Where to purchase</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="nav-container">
+                    <img src="assets/key_isolated.png" alt="key">
+                    <div class="nav-titles">
+                        <a href="#author" style="padding-left: 25%;">THE AUTHOR</a><br>
+                        <a href="#book" style="padding-left: 10%; font-size: 3em;">THE BOOK</a><br>
+                        <address><a href="https://www.khpcontent.com/" target="_blank" style="padding-left: 0%;">LINK TO ANCILLARY MATERIAL</a></address> <br>
+                        <address><a href="https://www.amazon.com/" target="_blank" style="padding-left: 20%;font-size: 3em;" >WHERE TO PURCHASE</a></address> <br>
+                        <a href="#contact" style="padding-left: 10%;" >CONTACT</a> 
+                    </div>
+                </div>
             </nav>
+
+
+
+
             <section>
+                <a name="author"></a>
                 <article>
                     <hgroup>
-                        <h1> TITULO PRIMER ARTICULO </h1>
-                        <h2>Subtitulo del primer articulo</h2>
+                        <h1> The author </h1>
                     </hgroup>
-                    <time datetime="6-7-2020">Publicado el 6 de Julio del 2020</time>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quam incidunt non, quasi dicta quo sint assumenda commodi neque atque, facilis, quis exercitationem reprehenderit consectetur. Nisi atque totam sunt nulla.</p>
-                    <footer>
-                        <p>Comentario primer articulo</p>
-                    </footer>
-                    <!--<img src="assets/casa.jpg" alt="casa">-->
-                    <address>
-                        <a href="http://google.com">visita sitio web primer articulo</a>
-                    </address>
+                    <div class="author_container">
+                        <div class="img-holder">
+                            <img src="assets/Cassandra_Baker.jpg" alt="Gwinnett Tech - Cassandra Baker Picture">
+                            <span>“Writing is a process. Once the student
+                                discovers the tools of writing, the job of writing
+                                is now much easier.“</span>
+
+                              
+                        </div>
+                   <!-- <time datetime="6-7-2020">Publicado el 6 de Julio del 2020</time>-->
+                        <div class="paragraph_author">
+                            <h2>Intructor and Researcher</h2>
+                            <p>Cassandra Baker, Ph.D. is an instructor of business management at Gwinnett Technical College.  Dr. Baker previously worked in the school of business and school of humanities teaching various business courses at the graduate and undergraduate level, writing and research at University of Phoenix.  Prior to joining academia, Cassandra spent 15 years with Ford Motor Company and Volvo Cars of North America.  She is a highly accomplished executive with experience in franchise management, organization management, financial management, and strategic planning within marketing sales & service.</p>
+                                
+                            <h2>International Executive Experience</h2>
+                            <p>Cassandra has held various executive positions within Ford and Volvo starting with Dealer Development, and then moving on to Business Management, Best Practices & Process Development, ISO Lead Auditor, Market Representation and Network Project Management.  Cassandra took her experience overseas, working in the United Kingdom, Sweden, and China.  During her time in Europe she worked with national sales companies and dealers in European Union Accession countries creating project plans to help dealers become profitable.</p>
+                            
+                            <div class="centerExploder">
+                                <button id="explodeButton" onclick="show_paragraph()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" (click)="show_paragraph()" viewBox="0 0 24 24" fill="white" width="5em" height="5em">
+                                        <path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 10l5 5 5-5H7z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <div class="paragraph_hided">
+                                <h2>Academical Degrees</h2>
+                                <p>Cassandra holds a PhD in Organization and Management from Capella University, Master of Business Administration from Brenau University and a B.S. in Business Administration from Shorter University. Her continuing education background includes professional training as Six Sigma Black Belt and Green Belt, Certified Sarbanes-Oxley, ISO Lead Auditor and Team Leader Myers-Brigg Certification. Dr. Baker owner Sugar Hill Research & Consulting and the author of Key Tools of Writing and Research: A Guide for the Student Writer on her belief in sharing knowledge and assisting students and organizations in achieving their goals can create win-win situations for all involved.</p>
+                            </div>
+                        </div>
+                    </div>
                     
                 </article>
-                <article>
+                <a name="book"></a>
+                <article class="article_book">
+                    <img src="assets/fondo_2.jpg" alt="puzzle pieces">
                     <hgroup>
-                        <h1> TITULO SEGUNDO ARTICULO </h1>
-                        <h2>Subtitulo del segunto articulo</h2>
+                        <h1> The Book </h1>
                     </hgroup>
-                    <time datetime="6-7-2020">Publicado el 6 de Julio del 2020</time>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, <cite>optio necessitatibus incidunt</cite>, atque accusantium non labore tenetur iure cumque quo aliquid eveniet nostrum facere, eaque harum possimus iusto. Repellendus, eos!</p>
                     <footer>
                         <p>Comentario segundo articulo</p>
@@ -63,9 +100,21 @@
                 <blockquote cite="http://faztweb.com">Mensaje 1</blockquote>
                 <blockquote cite="http://google.com">Mensaje 2</blockquote>
             </aside>
-
+            <a name="contact"></a>
             <footer>
-                    footer
+                <hgroup>
+                    <h1> Contact</h1>
+                </hgroup>
+                <div class="contactIcons">
+                <img src="assets/fondo_3.jpg" alt="puzzle end">
+                
+                    <button id="explodeButton" href="mailto:Cassandra.baker84@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="48px" height="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
+                    </button>
+                    <button id="explodeButton" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#cccccc"></path><g id="original-icon" fill="#ffffff"><path d="M56.502,17.2c-21.66125,0 -39.302,17.40425 -39.302,38.786c0,6.5575 1.70925,12.95375 4.902,18.662c-0.7525,3.956 -1.118,8.03025 -1.118,12.04c0,35.776 29.44425,64.844 65.704,64.844c3.7195,0 7.439,-0.24725 11.094,-0.86c5.4395,2.71975 11.55625,4.128 17.716,4.128c21.66125,0 39.302,-17.40425 39.302,-38.786c0,-5.7405 -1.2685,-11.223 -3.698,-16.34c0.8815,-4.22475 1.376,-8.58925 1.376,-12.986c0,-35.76525 -29.53025,-64.844 -65.79,-64.844c-3.40775,0 -6.84775,0.258 -10.234,0.774c-6.0415,-3.53675 -12.88925,-5.418 -19.952,-5.418zM86.258,43c5.633,0 10.56725,0.61275 14.706,1.892c4.1495,1.2685 7.66475,2.95625 10.406,5.074c2.7735,2.13925 4.89125,4.41825 6.192,6.794c1.3115,2.39725 1.978,4.8375 1.978,7.138c0,2.22525 -0.946,4.171 -2.666,5.934c-1.72,1.763 -3.88075,2.666 -6.45,2.666c-2.33275,0 -4.1495,-0.5375 -5.418,-1.634c-1.1825,-1.032 -2.4295,-2.6015 -3.784,-4.902c-1.5695,-2.9455 -3.40775,-5.34275 -5.59,-6.966c-2.11775,-1.58025 -5.719,-2.322 -10.578,-2.322c-4.515,0 -8.20225,0.817 -10.922,2.58c-2.63375,1.6985 -3.87,3.70875 -3.87,6.02c0,1.419 0.44075,2.59075 1.29,3.612c0.903,1.075 2.09625,1.96725 3.698,2.752c1.6555,0.817 3.36475,1.51575 5.074,1.978c1.75225,0.473 4.74075,1.2255 8.772,2.15c5.0955,1.08575 9.7825,2.22525 13.932,3.526c4.1925,1.333 7.79375,2.99925 10.75,4.902c3.01,1.935 5.4395,4.41825 7.138,7.396c1.6985,2.97775 2.494,6.63275 2.494,10.922c-0.01075,5.117 -1.45125,9.761 -4.386,13.846c-2.924,4.07425 -7.23475,7.353 -12.814,9.632c-5.5255,2.2575 -12.15825,3.354 -19.694,3.354c-9.0515,0 -16.6195,-1.53725 -22.532,-4.644c-4.2355,-2.24675 -7.77225,-5.3535 -10.406,-9.116c-2.6875,-3.8055 -4.042,-7.53575 -4.042,-11.18c0,-2.26825 0.9245,-4.22475 2.666,-5.848c1.73075,-1.591 3.90225,-2.408 6.536,-2.408c2.16075,0 4.07425,0.6235 5.59,1.892c1.462,1.21475 2.69825,3.02075 3.698,5.332c1.118,2.52625 2.31125,4.59025 3.612,6.278c1.2255,1.60175 2.97775,2.9885 5.246,4.042c2.279,1.075 5.40725,1.634 9.202,1.634c5.21375,0 9.4385,-1.10725 12.642,-3.268c3.139,-2.107 4.73,-4.63325 4.73,-7.74c0,-2.451 -0.86,-4.429 -2.494,-5.934c-1.72,-1.58025 -3.9775,-2.7735 -6.708,-3.612c-2.87025,-0.87075 -6.71875,-1.83825 -11.524,-2.838c-6.536,-1.38675 -12.09375,-3.053 -16.512,-4.902c-4.52575,-1.90275 -8.17,-4.54725 -10.836,-7.826c-2.709,-3.34325 -4.128,-7.4605 -4.128,-12.384c0,-4.69775 1.45125,-8.99775 4.3,-12.642c2.80575,-3.612 6.91225,-6.41775 12.212,-8.342c5.2245,-1.9135 11.4595,-2.838 18.49,-2.838z"></path></g></g></svg>
+                    </button>
+                </div>
             </footer>
 
 
