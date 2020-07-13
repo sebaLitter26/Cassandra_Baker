@@ -232,14 +232,34 @@ body{
       margin-top: 2em;
       width: 100%;
   }
-  
+
+
+  /*PURCHASE*/
+
+  .article_purchase{
+    text-align: center;
+  }
+
+  .article_purchase img{
+    padding: 3em;
+    background: rgba(147, 192, 185, 0.7);
+    width: 20%;
+    margin: 15px;
+    height: 100px;
+  }
+
+
+  /*FOOTER*/
   footer .contactIcons {
     position: absolute;
-    left: 25%;
-    bottom: 47%;
-    transform: translate(-54%, 37em);
-    width: 28em;
+    transform: translate(10%, -200%);
+
+  }
+
+  footer .contactIcons button{
+    color: white;
     font: italic 1.2em 'arial';
+    width: 20em;
   }
 
     footer img{
@@ -247,9 +267,6 @@ body{
         width: 100%;
     }
     
-
-
-}
 /*
 Background Color
 Red=85
