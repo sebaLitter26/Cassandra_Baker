@@ -211,6 +211,27 @@ body{
         font: italic 1.2em 'arial';
     }
 
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+       /* height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+     
+      
+      .row {
+        display: flex;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+
     
 .centerExploder {
     display: flex;
@@ -238,11 +259,34 @@ body{
   }
 
   .article_book hgroup img{
-    width: 250px;
+    width: 300px;
     position: absolute;
     z-index: 2;
     transform: translate(100%, -9em);
   }
+
+
+  .article_book p{
+    font: 1.2em 'arial';
+    margin: 2em;
+    text-align: justify;
+  }
+
+  .article_book .box_paraghaph{
+    background: rgb(95, 128, 123);
+    padding: 2em;
+  }
+
+  .article_book ul{
+    background: rgb(134, 192, 183);
+    padding: 2em;
+    font: 1.2em 'arial';
+  
+  }
+
+  .article_book li{
+        padding: 1em;
+    }
 
   .article_book .carousel {
         height: 190px;
