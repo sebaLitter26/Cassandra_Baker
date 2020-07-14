@@ -184,14 +184,16 @@ body{
 
     
 
-    .author_container .paragraph_hided {
+     .paragraph_hided {
         padding: 0 2em;
         display: none;
+        font: 1.2em 'arial';
     }
 
-    .author_container .paragraph_hided p{
+    .paragraph_hided p{
         
-        margin: 1em 0em 1em;
+        margin: 1em 0em 2em;
+        
     }
 
     .author_container .img-holder{
@@ -257,6 +259,18 @@ body{
     .article_book .carousel p:hover {
         
         font-size: 1.3em;
+    }
+
+
+    .article_book .table_content{
+        margin: 1em 3em 2em 3em;
+        color: white;
+        font: italic 1.2em 'arial';
+        background: rgb(147, 192, 185);
+        padding-left: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
 

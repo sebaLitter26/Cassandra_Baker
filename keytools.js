@@ -17,10 +17,11 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-function show_paragraph(){
+function show_paragraph(i){
     
     //this.classList.toggle("active");
-    var content = document.getElementsByClassName("paragraph_hided")[0];
+    var content = document.getElementsByClassName("paragraph_hided")[i];
+    console.log(i,content);
     console.log("display",content);
     if (content.style.display === "block") {
       content.style.display = "none";
