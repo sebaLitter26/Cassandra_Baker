@@ -43,9 +43,9 @@ src: local('PosterBodoniCGATT'),
 
 body{
     font: 'arial';
-    background-color: rgba(85, 154, 144,0.9);
+    background-color: #559a90;
     color: white;
-    margin: 4em 0 0 0;
+    margin: 0;
 
   
 }
@@ -56,7 +56,7 @@ body{
   
 
     header{
-        padding-top: 10px;
+        padding-top: 70px;
         width: 100%;
         border: 0em;
     }
@@ -65,19 +65,20 @@ body{
         
         position: relative;
         text-align: center;
-        background-color: grey;
-        padding-bottom: 4em;
+        background-color: #4b4642;
+        height: 370px;
     
     }
 
     .container-header img{
         width: 100%;
+        height: 300px;
     }
 
     .container-header .title_header_first{
         font: 4em 'mrsBlackfortRegular';
         position: absolute;
-        top: 48%;
+        top: 33%;
         left: 29%;
         transform: translate(-50%, -50%);
     }
@@ -85,7 +86,7 @@ body{
     .container-header .title_header_second{
         font: bold 4em 'PosterBodoniCGATT';
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         
@@ -95,8 +96,8 @@ body{
     .container-header .title_header_third{
         font: 3em 'gabriolaFontDownload';
         position: absolute;
-        bottom: -10%;
-        right: 0%;
+        bottom: -13%;
+        right: -10%;
         transform: translate(-50%, -50%);
         
 
@@ -111,7 +112,7 @@ body{
     .nav-container{
         position: relative;
         width: 100%;
-        height: 40em;
+        height: 670px;
     }
 
     .nav-container img{
@@ -133,40 +134,41 @@ body{
 
     .nav-titles  a:hover{
         color: rgb(233, 241, 240);
-        /*font-size: 2.5em;*/
-        font-style: oblique;
+        /*font-size: 2.5em;
+        font-style: oblique;*/
+        text-shadow: 1px 1px 2px lightblue, 0 0 4px white, 0 0 10px lightcyan;
     }
 
     .nav-titles a {
         text-decoration: none;
-        word-spacing: 30px;
         color: white;
         font: 2em 'arial';
-        text-shadow: 1px 1px 2px lightblue, 0 0 4px white, 0 0 10px lightcyan;
+        
     }
 
 
     /*AUTHOR*/
     hgroup{
-        background-color: #6e6868;
-        height: 2em;
-        padding-left: 2em;
+        background-color: #4b4642;
+        height: 70px;
+        padding-left: 110px;
         font-size: 1.5em;
         text-shadow: 1px 1px 2px white, 0 0 2px white, 0 0 7px white;
     }
     hgroup h1{
-        padding-top: 5px;
+        padding-top: 15px;
         font: 1.5em 'arial';
-        margin-top: -5px;
+        margin-top: -4px;
     }
    
     .author_container img{
         width: 440px;
+        height: 440px;
         float: left;
         
-        margin: 0em 4em 0em 3em;
-        padding: 5em 5em 8em;
-        background: rgba(147, 192, 185, 0.7);
+        margin: 40px 40px 0 110px;
+        padding: 100px 70px 260px 70px;
+        background: #72c1b3;
 
     }
 
@@ -174,25 +176,26 @@ body{
         display: inline;
         font: 1.5em 'arial';
         text-align: justify;
-        text-justify: inter-word;
+       /* text-justify: inter-word;*/
+        margin: 1em;
 
     }
 
     .author_container .paragraph_author p{
-        margin: 1em 2em 2em
+        margin: 1em 110px 2em
     }
 
     
 
      .paragraph_hided {
-        padding: 0 2em;
+        padding: 0 4em;
         display: none;
         font: 1.2em 'arial';
     }
 
     .paragraph_hided p{
         
-        margin: 1em 0em 2em;
+        margin: 1em 0em 2em !important;
         
     }
 
@@ -204,11 +207,11 @@ body{
 
     .author_container .img-holder span {
         position: absolute;
-        left: 25%;
+        left: 28%;
         bottom: 47%;
-        transform: translate(-54%, 37em);
-        width: 28em;
-        font: italic 1.2em 'arial';
+        transform: translate(-54%, 33em);
+        width: 21em;
+        font: italic 1.4em 'arial';
     }
 
 
@@ -254,15 +257,19 @@ body{
   /*THE BOOK*/
 
   .article_book img{
-      margin-top: 2em;
+     /* margin-top: 2em;*/
       width: 100%;
+      height: 300px;
   }
 
   .article_book hgroup img{
     width: 300px;
+    height: auto;
     position: absolute;
     z-index: 2;
     transform: translate(100%, -9em);
+    -webkit-box-shadow: -1px 2px 26px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 26px -1px rgba(0,0,0,0.75);
   }
 
 
@@ -273,12 +280,12 @@ body{
   }
 
   .article_book .box_paraghaph{
-    background: rgb(95, 128, 123);
+    background: #42726a;
     padding: 2em;
   }
 
   .article_book ul{
-    background: rgb(134, 192, 183);
+    background: #72c1b3;
     padding: 2em;
     font: 1.2em 'arial';
   
@@ -310,7 +317,7 @@ body{
         margin: 1em 3em 2em 3em;
         color: white;
         font: italic 1.2em 'arial';
-        background: rgb(147, 192, 185);
+        background: #42726461;
         padding-left: 2em;
         display: flex;
         justify-content: space-between;
@@ -322,21 +329,22 @@ body{
 
   .article_purchase{
     text-align: center;
+    padding: 70px;
   }
 
   .article_purchase img{
-    padding: 3em;
-    background: rgba(147, 192, 185, 0.7);
-    width: 20%;
+    padding: 50px 350px;
+    background: #42726a;
+    width: 730px;
     margin: 15px;
-    height: 100px;
+    height: 150px;
   }
 
 
   /*FOOTER*/
   footer .contactIcons {
     position: absolute;
-    transform: translate(10%, -200%);
+    transform: translate(50px, -200%);
 
   }
 
@@ -344,10 +352,11 @@ body{
     color: white;
     font: italic 1.2em 'arial';
     width: 20em;
+    text-align: justify;
   }
 
     footer img{
-        position: relative;
+        height: 450px;
         width: 100%;
     }
     
