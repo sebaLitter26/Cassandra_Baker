@@ -24,6 +24,48 @@ src: local('PosterBodoniCGATT'),
     src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
+@keyframes showNav {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+.parallax1 {
+    /* The image used */
+    background-image: url("assets/header.jpg");
+  
+    /* Set a specific height */
+    min-height: 300px; 
+  
+    
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("assets/fondo_2.jpg");
+  
+    /* Set a specific height */
+    min-height: 300px; 
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url("assets/fondo_3.jpg");
+  
+    /* Set a specific height */
+    min-height: 450px; 
+  }
+
+  .parallax {
+    
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -46,9 +88,29 @@ body{
     background-color: #559a90;
     color: white;
     margin: 0;
+    width: 100%;
 
   
 }
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+   /* height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+ 
+  
+  .row {
+    display: flex;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
 @media (min-width: 700px) {   
@@ -191,6 +253,7 @@ body{
         padding: 0 4em;
         display: none;
         font: 1.2em 'arial';
+        animation: showNav 500ms ease-in-out both;
     }
 
     .paragraph_hided p{
@@ -215,24 +278,7 @@ body{
     }
 
 
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-       /* height: 300px; /* Should be removed. Only for demonstration */
-      }
-
-     
-      
-      .row {
-        display: flex;
-      }
-
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+   
       
 
     
@@ -322,6 +368,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        animation: showNav 250ms ease-in-out both;
     }
 
 
@@ -333,7 +380,7 @@ body{
   }
 
   .article_purchase img{
-    padding: 50px 350px;
+    padding: 50px 315px;
     background: #42726a;
     width: 730px;
     margin: 15px;
@@ -344,7 +391,7 @@ body{
   /*FOOTER*/
   footer .contactIcons {
     position: absolute;
-    transform: translate(50px, -200%);
+    transform: translate(100px, -200%);
 
   }
 
@@ -355,24 +402,10 @@ body{
     text-align: justify;
   }
 
+
     footer img{
         height: 450px;
         width: 100%;
     }
-    
-/*
-Background Color
-Red=85
-Green=154
-Blue=144
 
-Hue=114
-Sat=69
-Lum=112
-
-Other Color in book used to highlight course objectives (Yellow/Gold)
-R=255
-G=224
-B=160
-
-*/
+}
