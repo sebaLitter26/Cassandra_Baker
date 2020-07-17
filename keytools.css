@@ -83,6 +83,8 @@ src: local('PosterBodoniCGATT'),
 }
 
 
+
+
 body{
     font: 'arial';
     background-color: #559a90;
@@ -330,7 +332,7 @@ body{
     padding: 2em;
   }
 
-  .article_book ul{
+  .article_book .column ul{
     background: #72c1b3;
     padding: 2em;
     font: 1.2em 'arial';
@@ -341,20 +343,27 @@ body{
         padding: 1em;
     }
 
-  .article_book .carousel {
-        height: 190px;
-        margin: 0 auto;
-        display: flex;
-    }
-    .article_book .carousel p {
-        
-        margin: 1em;
-        width: 30%;
-        font: italic 1.2em 'arial';
-    }
 
-    .article_book .carousel p:hover {
+    
+    .article_book .carousel {
+        display: -webkit-box;
+        margin: 0;
+        padding: 70px;
+        overflow: hidden;
         
+      }
+      
+      .article_book .carousel p {
+        display: block;
+        list-style: none;
+        margin: 1em;
+        width: 40%;
+        text-align: justify;
+        height: 100px;
+        font: italic 1.2em 'arial';
+      }
+
+      .article_book .carousel p:hover { 
         font-size: 1.3em;
     }
 
