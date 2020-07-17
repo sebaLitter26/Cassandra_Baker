@@ -1,24 +1,5 @@
-
 var intermitencia_carrusel = false;
 
-/*
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-      
-    }
-  });
-}
-
-*/
 function show_paragraph(i){
     
     //this.classList.toggle("active");
@@ -37,10 +18,11 @@ function show_paragraph(i){
 
 window.onload = function () {
 
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 2000;
     let posicionActual = 0;
     let $botonStop = document.getElementsByClassName('carousel')[0];
-    let liEls = document.querySelectorAll('.carousel p');
+    var liEls = document.querySelectorAll('.carousel p');
+    let cant_comments = liEls.length ;
     let intervalo;
 
     // Funciones
@@ -49,14 +31,11 @@ window.onload = function () {
      * Funcion que cambia la foto en la siguiente posicion
      */
     function pasarReview() {
-        if(posicionActual >= liEls.length - 1) {
-            posicionActual = 0;
-        } else {
-            posicionActual++;
-        }
-        //renderizarComment();
-        console.log(posicionActual);
-        liEls[posicionActual].scrollIntoView({behavior: 'smooth'});
+      
+        posicionActual++;
+        posicionActual=posicionActual%cant_comments;
+
+        liEls[posicionActual].scrollIntoView({block: 'nearest', behavior: 'smooth'});
     }
 
   

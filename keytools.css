@@ -347,8 +347,8 @@ body{
     
     .article_book .carousel {
         display: -webkit-box;
-        margin: 0;
-        padding: 70px;
+        margin: 0 70px;
+        
         overflow: hidden;
         
       }
@@ -356,15 +356,16 @@ body{
       .article_book .carousel p {
         display: block;
         list-style: none;
-        margin: 1em;
-        width: 40%;
+        margin: 75px;
+        width: 30%;
         text-align: justify;
         height: 100px;
         font: italic 1.2em 'arial';
+        overflow: -moz-hidden-unscrollable;
       }
 
       .article_book .carousel p:hover { 
-        font-size: 1.3em;
+       /* font-size: 1.3em;*/
     }
 
 
