@@ -391,7 +391,7 @@ body{
 
 
     .article_book .table_content{
-        margin: 1em 3em 2em 3em;
+        margin: 1em 3em 70px 3em;
         color: white;
         font: italic 1.2em 'arial';
         background: #42726461;
@@ -414,7 +414,7 @@ body{
     padding: 50px 315px;
     background: #42726a;
     width: 730px;
-    margin: 15px;
+    margin-bottom: 30px;
     height: 150px;
   }
 
