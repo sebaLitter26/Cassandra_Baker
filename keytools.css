@@ -303,12 +303,13 @@ body{
   }
 
   /*THE BOOK*/
-
+/*
   .article_book img{
-     /* margin-top: 2em;*/
+     /* margin-top: 2em;
       width: 100%;
       height: 300px;
   }
+  */
 
   .article_book hgroup img{
     width: 300px;
@@ -329,7 +330,20 @@ body{
 
   .article_book .box_paraghaph{
     background: #42726a;
+    padding: 1em;
+    margin: 2em;
+  }
+
+  .article_book .box_paraghaph p{
+    
     padding: 2em;
+    margin: 0 2em;
+    text-align: left;
+  }
+
+  .article_book .box_paraghaph img{
+    float: left;
+    margin: 2em;
   }
 
   .article_book .column ul{
@@ -340,8 +354,15 @@ body{
   }
 
   .article_book li{
-        padding: 1em;
+      padding: 1em;
+      margin: 0 6em;
     }
+
+    .article_book ul img{
+      /* margin-top: 2em;*/
+      float: left;
+       height: 370px;
+   }
 
 
     
@@ -401,21 +422,20 @@ body{
   /*FOOTER*/
   footer .contactIcons {
     position: absolute;
-    transform: translate(100px, -200%);
+    transform: translate(100px, -240%);
 
   }
 
   footer .contactIcons button{
     color: white;
     font: italic 1.2em 'arial';
-    width: 20em;
     text-align: justify;
+    width: 400px;
   }
 
 
-    footer img{
-        height: 450px;
-        width: 100%;
+    footer .article_purchase img{
+        height: 20px;
     }
 
 }
