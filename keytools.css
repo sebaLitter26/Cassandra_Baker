@@ -471,11 +471,12 @@ body{
   }
   */
 
-  footer  button{
+  footer .container_buttons button{
     color: white;
     font: 1.2em 'arial';
     text-align: justify;
-    margin: 3em;
+    margin: 3em 3em 0;
+    width: 20%;
    /* width: 340px;*/
   }
 
