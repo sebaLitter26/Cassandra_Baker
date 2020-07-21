@@ -53,8 +53,9 @@ src: local('PosterBodoniCGATT'),
     background-image: url("assets/fondo_3.jpg");
   
     /* Set a specific height */
-    min-height: 50px; 
-    width: 100%;
+    min-height: 450px; 
+    background-position-y: bottom;
+
     
   }
 
@@ -67,6 +68,9 @@ src: local('PosterBodoniCGATT'),
     background-repeat: no-repeat;
     
     background-size: cover;
+
+    /*background-size: 100%;*/
+    
     
   }
 
@@ -245,6 +249,7 @@ body{
         font: 1.5em 'arial';
         height: 660px;
         width: fit-content;
+        margin-right: 5%;
         overflow-y: scroll;
         scrollbar-width: none;
         /*text-align: justify;
@@ -346,6 +351,7 @@ body{
   .article_book .column ul{
     background: #72c1b3;
     padding: 2em;
+    margin-right: 5%;
     font: 1.2em 'arial';
   
   }
@@ -439,13 +445,15 @@ body{
     width: auto;
   }
 
-  .article_purchase .container_purchase_img p{
-   
+
+
+  .article_purchase .container_purchase_img img{
+       max-width: 100%;
   }
   /*FOOTER*/
 
   footer .container_buttons{
-    padding-top: 240px;
+    padding-top: 180px;
     text-align: center;
 
   }
