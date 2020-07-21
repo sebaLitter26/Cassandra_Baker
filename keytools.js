@@ -17,7 +17,6 @@ function show_paragraph(){
     let deg = (switch_paragraph) ? 0:270;
     switch_paragraph=!switch_paragraph;
     document.getElementById("explodeButton").style.webkitTransform = 'rotate('+deg+'deg)';
-    console.log("display",content);
 
     if (content.style.display === "block") {
       content.style.display = "none";
@@ -55,7 +54,7 @@ function elementInViewport(el) {
 
 window.onload = function () {
 
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 2500;
     
     let $botonStop = document.getElementsByClassName('carousel')[0];
     var liEls = document.querySelectorAll('.carousel p');
