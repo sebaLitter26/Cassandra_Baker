@@ -50,6 +50,9 @@ function elementInViewport(el) {
 
 
 
+
+
+
 window.onload = function () {
 
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
@@ -104,4 +107,13 @@ window.onload = function () {
     $botonStop.addEventListener('click', startStop);
     // Iniciar
     playIntervalo();
+/*
+    window.onscroll = function() {
+      document.querySelectorAll(".parallax").forEach(function(el, i) {
+        if(this.elementInViewport(el)) 
+          el.style.backgroundPosition = "50% " + (window.pageYOffset * -0.95 + i * 200) + "px";
+    
+      });
+    }
+    */
 } 
