@@ -229,9 +229,9 @@ body{
     hgroup{
         background-color: #4b4642;
         height: 70px;
-        padding-left: 110px;
+        padding-left: 70px;
         font-size: 1.5em;
-        text-shadow: 1px 1px 2px white, 0 0 2px white, 0 0 7px white;
+        /*text-shadow: 1px 1px 2px white, 0 0 2px white, 0 0 7px white; */
     }
     hgroup h1{
         padding-top: 15px;
@@ -244,8 +244,9 @@ body{
     }
    
     .author_container img{
-        margin: 0 0px 0 10%;
-        padding: 100px 70px 180px 70px;
+        margin: 0 0px 0 18%;
+        /*width: 78%;*/
+       padding: 100px 70px 180px 70px;
         background: #72c1b3;
 
     }
@@ -321,14 +322,14 @@ body{
     height: auto;
     position: absolute;
     z-index: 2;
-    transform: translate(90%, -60%);
+    transform: translate(112%, -60%);
     -webkit-box-shadow: -1px 2px 26px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 2px 26px -1px rgba(0,0,0,0.75);
   }
 
 
   .article_book p{
-    font: 1.2em 'arial';
+    font: 1.1em 'arial';
     margin: 2em;
   }
 
@@ -351,14 +352,14 @@ body{
 
   .article_book .box_paraghaph img{
     float: left;
-    margin: 2em;
+    margin:1em;
   }
 
   .article_book .column ul{
     background: #72c1b3;
     padding: 2em;
     margin-right: 5%;
-    font: 1.2em 'arial';
+    font: 1.1em 'arial';
   
   }
 
@@ -391,7 +392,7 @@ body{
         width: 380px;
         /* text-align: justify; */
         height: 100px;
-        font: 1.2em 'arial';
+        font: 1.1em 'arial';
         overflow: -moz-hidden-unscrollable;
       }
 
@@ -403,7 +404,7 @@ body{
     .article_book .table_content{
         margin: 1em 3em 70px 3em;
         color: white;
-        font: 1.2em 'arial';
+        font: 1.1em 'arial';
         background: #42726461;
         padding-left: 2em;
         height: 70px;
@@ -421,7 +422,7 @@ body{
     .paragraph_hided {
       padding: 0 4em;
       display: none;
-      font: 1.2em 'arial';
+      font: 1.1em 'arial';
       animation: showNav 500ms ease-in-out both;
   }
 
@@ -447,7 +448,7 @@ body{
     text-align: center;
     color: white;
     width: max-content;
-    font: 0.8em 'arial';
+    font: 1.1em 'arial';
     width: auto;
   }
 
@@ -473,7 +474,7 @@ body{
 
   footer .container_buttons button{
     color: white;
-    font: 1.2em 'arial';
+    font: 1.1em 'arial';
     text-align: justify;
     margin: 3em 3em 0;
     width: 20%;
