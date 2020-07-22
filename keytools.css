@@ -117,11 +117,11 @@ body{
   }
 
  
-  
+  /*
   .row {
     display: flex;
   }
-
+*/
   .row:after {
     content: "";
     display: table;
@@ -129,7 +129,7 @@ body{
   }
 
 
-@media (min-width: 700px) {   
+ 
 
   
 
@@ -172,13 +172,14 @@ body{
     }
 
     .container-header .title_header_third{
-        font: 3em 'gabriolaFontDownload';
-        position: absolute;
-        bottom: -13%;
-        right: -10%;
-        transform: translate(-50%, -50%);
+      font: 3em 'gabriolaFontDownload';
+      /* position: absolute; */
+      /* bottom: -13%; */
+      /* right: -10%; */
+      float: right;
+      margin-right: 70px;
+      /* transform: translate(-50%, -50%); */
         
-
     }
 
 
@@ -225,6 +226,7 @@ body{
     }
 
 
+
     /*AUTHOR*/
     hgroup{
         background-color: #4b4642;
@@ -239,15 +241,22 @@ body{
         margin-top: -4px;
     }
 
-    .author_container .row{
-      padding-top: 40px !important;
+    .author_container {
+      margin: 40px 0;
+      /*width: fit-content;*/
+      -webkit-columns: 2 500px;
+      -moz-columns: 2 500px;
+           columns:  2 500px;
+      -webkit-column-gap: 4em;
+      -moz-column-gap: 4em;
+          /* column-gap: 40px;*/
     }
    
     .author_container img{
-        margin: 0 0px 0 18%;
-        /*width: 78%;*/
-       padding: 100px 70px 180px 70px;
-        background: #72c1b3;
+      margin: auto;
+      display: block;
+      padding: 100px 70px 180px 70px;
+      background: #72c1b3;
 
     }
 
@@ -255,8 +264,9 @@ body{
         
         font: 1.5em 'arial';
         height: 660px;
-        width: fit-content;
-        margin-right: 5%;
+        /*width: fit-content;*/
+        margin-right: 70px;
+        /*margin: 0 40px;*/
         overflow-y: scroll;
         scrollbar-width: none;
         /*text-align: justify;
@@ -264,6 +274,13 @@ body{
         /*margin: 1em;*/
 
     }
+
+    @media (max-width: 1160px) {  
+      .author_container .paragraph_author {
+        margin: 20px 70px;
+      }
+    }
+    
 
     .author_container .paragraph_author::-webkit-scrollbar {
       display: none;
@@ -275,19 +292,19 @@ body{
   }
 
 
-    .author_container span {
-        position: absolute;
-        transform: translate(-110%, 765%);
-        width: 21em;
-        font: 1.4em 'arial';
-    }
+  .author_container span {
+      position: absolute;
+      transform: translate(-140%, 760%);
+      width: 21em;
+      font: 1.4em 'arial';
+  }
 
-    .paragraph_author svg{
-      padding-top: 20% !important;
-      cursor: pointer;
-    }
+  .paragraph_author svg{
+    padding-top: 20% !important;
+    cursor: pointer;
+  }
 
-.centerExploder {
+  .centerExploder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,8 +335,7 @@ body{
   */
 
   .article_book hgroup img{
-    width: 20%;
-    height: auto;
+    width: 300px;
     position: absolute;
     z-index: 2;
     transform: translate(112%, -53%);
@@ -330,24 +346,35 @@ body{
 
   .article_book p{
     font: 1.1em 'arial';
-    margin: 2em;
+    /*margin: 2em;*/
+  }
+
+
+  .book_content{
+    -webkit-columns: 2 500px;
+    -moz-columns: 2 500px;
+         columns:  2 500px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    
+    margin: 30px 70px;
+    
   }
 
   .article_book .key_tools{
       padding-top: 26%;
-      margin-left: 70px;
   }
 
   .article_book .box_paraghaph{
     background: #42726a;
     padding: 1em;
-    margin: 0 30px 0 70px;
+    height: 130px;
+    margin: 70px 0;
   }
 
   .article_book .box_paraghaph p{
+    padding-left: 10em;
     
-    padding: 2em;
-    margin: 0 2em;
     text-align: left;
   }
 
@@ -356,17 +383,19 @@ body{
     margin:1em;
   }
 
-  .article_book .column ul{
+  .article_book ul{
     background: #72c1b3;
     padding: 2em;
-    margin-right: 5%;
+    margin-right: 70px;
     font: 1.1em 'arial';
+    
+    height: 400px;
   
   }
 
   .article_book li{
-      padding: 1em;
-      margin: 0 6em;
+      padding: 0.9em;
+      margin-left: 8em;
     }
 
     .article_book ul img{
@@ -403,7 +432,7 @@ body{
 
 
     .article_book .table_content{
-        margin: 1em 3em 70px 3em;
+        margin: 0 70px 70px 70px;
         color: white;
         font: 1.4em 'arial';
         background: #42726461;
@@ -481,14 +510,3 @@ body{
     width: 20%;
    /* width: 340px;*/
   }
-
-
-   
-
-}
-
-/*
-
-
-
-*/
