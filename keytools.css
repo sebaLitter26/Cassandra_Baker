@@ -106,33 +106,30 @@ body{
     margin: 0;
     width: 100%;
 
-  
 }
 
+/*
 .column {
     float: left;
     width: 50%;
     padding: 10px;
-   /* height: 300px; /* Should be removed. Only for demonstration */
+   /* height: 300px; /* Should be removed. Only for demonstration 
   }
 
  
-  /*
+  
   .row {
     display: flex;
   }
-*/
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-
+*/
  
-
-  
-
     header{
         padding-top: 70px;
         width: 100%;
@@ -141,8 +138,6 @@ body{
 
     .container-header{
         
-        position: relative;
-        text-align: center;
         background-color: #4b4642;
         height: 370px;
     
@@ -153,21 +148,22 @@ body{
         height: 300px;
     }
 
+    .main_title{
+      position: relative;
+      padding: 110px 450px;
+    }
+
     .container-header .title_header_first{
-        font: 4em 'mrsBlackfortRegular';
-        position: absolute;
-        top: 33%;
-        left: 29%;
-        transform: translate(-50%, -50%);
+      font: 4em 'mrsBlackfortRegular';
+      top: 40px;
+      position: absolute;
+      
     }
 
     .container-header .title_header_second{
         font: bold 4em 'PosterBodoniCGATT';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+        text-align: center;
+        
         
     }
 
