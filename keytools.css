@@ -37,7 +37,9 @@ src: local('PosterBodoniCGATT'),
     /* Set a specific height */
     min-height: 300px; 
 
-    background-size: 100% ;
+    background-size: 100% 42%;
+    
+    padding-left: 20%;
   
     
   }
@@ -58,9 +60,8 @@ src: local('PosterBodoniCGATT'),
     /* Set a specific height */
     min-height: 450px;
     
-    background-size: 100%;
+    background-size: 100% 49%;
     background-position: bottom;
-    background-color: #4b4642;
 
     
   }
@@ -138,8 +139,7 @@ body{
 
     .container-header{
         
-        background-color: #4b4642;
-        height: 370px;
+        height: 300px;
     
     }
 
@@ -150,25 +150,27 @@ body{
 
     .main_title{
       position: relative;
-      padding: 110px 450px;
+      padding-top: 130px;
+      /*padding: 110px 450px;*/
     }
 
     .container-header .title_header_first{
       font: 4em 'mrsBlackfortRegular';
-      top: 40px;
+      top: 55px;
       position: absolute;
       
     }
 
     .container-header .title_header_second{
         font: bold 4em 'PosterBodoniCGATT';
-        text-align: center;
+        /*text-align: center;*/
+        padding-left: 130px;
         
         
     }
 
-    .container-header .title_header_third{
-      font: 3em 'gabriolaFontDownload';
+    hgroup .title_header_third{
+      font: 2em 'gabriolaFontDownload';
       /* position: absolute; */
       /* bottom: -13%; */
       /* right: -10%; */
@@ -200,6 +202,7 @@ body{
 
     .nav-container {
       margin: 70px;
+      padding-top: 50px;
       /*width: fit-content;*/
       -webkit-columns: 2 500px;
       -moz-columns: 2 500px;
@@ -213,7 +216,6 @@ body{
     .nav-container img{
       margin: auto;
       display: block;
-      padding-top: 65px;
       /*
         position: absolute;
         left: 25%;
@@ -222,10 +224,12 @@ body{
         */
     }
 
+    .nav_img
+
     .nav-container .nav-titles{
       margin: auto;
       display: block;
-      padding-top: 170px;
+      padding-top: 110px;
       /*
         width: 50%;
         position: absolute;
@@ -280,18 +284,23 @@ body{
 
     .author_container .img_frase{
       background: #72c1b3;
-      padding: 20px 110px;
+      /*padding-bottom: 10px;*/
+      height: 800px;
+      
       /*padding: 100px 70px 180px 70px;*/
     }
+
+   
    
     .author_container img{
       margin: auto;
       display: block;
-
+      padding-top: 100px;
+      
     }
 
     .author_container span {
-      margin: 60px auto;
+      margin: 100px;
       display: block;
       
       /* width: 21em; */
@@ -310,6 +319,7 @@ body{
         /*text-align: justify;
         text-justify: inter-word;*/
         /*margin: 1em;*/
+        height: 800px;
 
     }
 
@@ -418,7 +428,6 @@ body{
     background: #72c1b3;
     padding: 2em;
     margin-right: 70px;
-    font: 1.1em 'arial';
     
     height: 400px;
   
@@ -427,6 +436,7 @@ body{
   .article_book li{
       padding: 0.9em;
       margin-left: 8em;
+      font: 1.3em 'arial';
     }
 
     .article_book ul img{
@@ -514,7 +524,6 @@ body{
     margin-bottom: 30px;
     height: 150px;
     text-align: center;
-    color: white;
     width: max-content;
     font: 1.1em 'arial';
     width: auto;
