@@ -340,13 +340,13 @@ body{
         height: 800px;
 
     }
-
+/*
     @media (max-width: 1160px) {  
       .author_container .paragraph_author {
         margin: 20px 70px;
       }
     }
-    
+    */
 
     .author_container .paragraph_author::-webkit-scrollbar {
       display: none;
