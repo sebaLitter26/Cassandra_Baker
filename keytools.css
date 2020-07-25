@@ -385,6 +385,14 @@ body{
     .article_book .book_content .book_tape{
       right: 10px;
     }
+
+    .article_book .book_content .key_tools {
+        padding-top: 10px;
+    }
+
+    .article_book .key_tools p{
+      width: 60%;
+    }
     
 
     .book_content .column2_book {
