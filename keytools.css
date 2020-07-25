@@ -385,6 +385,12 @@ body{
     .article_book .book_content .book_tape{
       right: 10px;
     }
+    
+
+    .book_content .column2_book {
+      margin: 100px auto;
+    }
+
   }
 
 
@@ -407,14 +413,17 @@ body{
 
   .article_book .key_tools{
       padding-top: 190px;
+      /*height: 410px;*/
   }
 
-  .article_book .box_paraghaph{
+  .article_book .key_tools .box_paraghaph{
     background: #42726a;
     padding: 1em;
-    height: 130px;
-    margin: 90px 0;
+    /*height: 130px;*/
+    margin-top: 200px;
   }
+
+  
 
   .article_book .box_paraghaph p{
     padding: 1em;
@@ -426,7 +435,12 @@ body{
     margin:1em;
   }
 
-  .article_book ul{
+  .book_content .column2_book{
+    /*height: 550px;*/
+    display: inline-block;
+  }
+
+  .article_book .column2_book ul{
     background: #72c1b3;
     padding: 2em;
     margin-right: 70px;
