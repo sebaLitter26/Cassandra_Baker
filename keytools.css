@@ -181,11 +181,6 @@ body{
     }
 
 
-    nav{
-      height: 670px;
-      
-
-    }
 
     @media (max-width: 980px) {  
       nav {
@@ -202,7 +197,6 @@ body{
 
     .nav-container {
       margin: 70px;
-      padding-top: 50px;
       /*width: fit-content;*/
       -webkit-columns: 2 500px;
       -moz-columns: 2 500px;
@@ -224,12 +218,15 @@ body{
         */
     }
 
-    .nav_img
+    .nav_img{
+      height: 500px;
+    }
 
     .nav-container .nav-titles{
-      margin: auto;
+      margin: auto 70px;
       display: block;
-      padding-top: 110px;
+      padding-top: 90px;
+      width: 530px;
       /*
         width: 50%;
         position: absolute;
@@ -557,3 +554,12 @@ body{
     width: 20%;
    /* width: 340px;*/
   }
+
+
+  /*
+
+  <meta name="twitter:title" content="Mozilla Developer Network">
+  <meta name="description" content="Book Key Tools writted by "/>
+  
+  
+  */
