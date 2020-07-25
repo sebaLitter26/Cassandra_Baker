@@ -372,13 +372,19 @@ body{
   }
   */
 
-  .article_book hgroup img{
+  .article_book .book_content .book_tape{
     width: 300px;
     position: absolute;
-    z-index: 2;
-    transform: translate(112%, -53%);
+    top: -200px;
+    right: 53%;
     -webkit-box-shadow: -1px 2px 26px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 2px 26px -1px rgba(0,0,0,0.75);
+  }
+
+  @media (max-width: 1220px) {  
+    .article_book .book_content .book_tape{
+      right: 10px;
+    }
   }
 
 
@@ -394,7 +400,7 @@ body{
          columns:  2 500px;
     -webkit-column-gap: 4em;
     -moz-column-gap: 4em;
-    
+    position: relative;
     margin: 30px 70px;
     
   }
