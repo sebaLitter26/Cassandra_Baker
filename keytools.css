@@ -39,6 +39,7 @@ src: local('PosterBodoniCGATT'),
 
     /*background-size: 100% 370px;*/
     background-size: 1530px 370px;
+    background-position: top;
     
     padding-left: 20%;
   
@@ -73,7 +74,7 @@ src: local('PosterBodoniCGATT'),
     
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-   /* background-position: center;*/
+    
     background-repeat: no-repeat;
     
     
@@ -437,8 +438,10 @@ body{
          columns:  2 500px;
     -webkit-column-gap: 4em;
     -moz-column-gap: 4em;
+    column-gap: 40px;
     position: relative;
     margin: 30px 70px;
+    
     
   }
 
