@@ -432,6 +432,12 @@ body{
 
   }
 
+  @media (max-width:710px) {
+    .article_book .book_content .img_frase_tape{
+      right: auto;
+    }
+  }
+
 
   .article_book p{
     font: 1.1em 'arial';
@@ -453,7 +459,7 @@ body{
   }
 
   .article_book .key_tools{
-      padding-top: 230px;
+      padding-top: 200px;
       /*height: 410px;*/
   }
 
@@ -461,7 +467,7 @@ body{
     background: #42726a;
     padding: 1em;
     /*height: 130px;*/
-    margin-top: 150px;
+    margin-top: 105px;
   }
 
   
