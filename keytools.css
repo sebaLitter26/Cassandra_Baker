@@ -32,7 +32,7 @@ src: local('PosterBodoniCGATT'),
 
 .parallax1 {
     /* The image used */
-    background-image: url("assets/header.jpg");
+    background-image: url("assets/header.png");
   
     /* Set a specific height */
     min-height: 300px; 
@@ -447,7 +447,7 @@ body{
   }
 
   .article_book .key_tools{
-      padding-top: 190px;
+      padding-top: 200px;
       /*height: 410px;*/
   }
 
