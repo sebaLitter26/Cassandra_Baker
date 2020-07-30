@@ -1,0 +1,57 @@
+
+header{
+  height: 20%;
+}
+
+header img{
+  width:40px;
+  color:white;
+}
+
+body{
+  margin:20px;
+  font: 'arial';
+    background-color: #559a90;
+    color: white;
+}
+  
+  
+  @media screen and (orientation: portrait) {
+    .home .vertical{
+      display:none;
+      
+    }
+
+    .home .horizontal{
+        width:80%;
+        margin: auto;
+        display:block;
+
+    }
+
+    .home .horizontal img{
+       
+        max-width: 300px;
+        width: -webkit-fill-available;
+    }
+  }
+  
+  /* For landscape, we want the tool bar stick on the left */
+  
+  @media screen and (orientation: landscape) {
+    .home .horizontal{
+      display:none;
+    }
+    .home .vertical{
+      max-width: 300px;
+        
+    }
+    .home .vertical img{
+        width: -webkit-fill-available;
+        max-width: 230px;
+        float: left;
+    }
+
+  }
+
+

@@ -48,19 +48,20 @@ function elementInViewport(el) {
 
 
 
-function isMobile(){
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
-   (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
-    window.location.href = "./mobile/index.html";
+function isDesktop(event){
+  event.stopPropagation();
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) &&
+   (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+    window.location.href = "../index.html";
   }
   
 }
 
 
 
-window.onload = function () {
+window.onload = function (e) {
 
-    this.isMobile();
+    this.isDesktop(e);
 
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 2500;
     
