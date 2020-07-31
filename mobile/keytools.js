@@ -58,70 +58,24 @@ function isDesktop(event){
 }
 
 
+function displayPages(div_name){
+  
+    let pagina;
+
+    let pages= ['menu', 'home','author','book','iframe','purchase','contact'];
+    pages.forEach(element=>{
+      pagina = document.querySelectorAll('.body .'+ element)[0];
+      console.log(pagina);
+      pagina.hidden = (div_name!=element);
+    });
+    
+}
+
+
 
 window.onload = function (e) {
 
     this.isDesktop(e);
 
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 2500;
-    
-    let $botonStop = document.getElementsByClassName('carousel')[0];
-    var liEls = document.querySelectorAll('.carousel p');
-    let cant_comments = liEls.length ;
-    let posicionActual = cant_comments;
-    let intervalo;
-
-    // Funciones
-
-    /**
-     * Funcion que cambia la foto en la siguiente posicion
-     */
-    function pasarReview() {
-
-      if(!this.elementInViewport($botonStop)) return;
-
-        posicionActual--;
-        if(posicionActual<0)
-          posicionActual= cant_comments;
-
-        liEls[posicionActual].scrollIntoView({block: 'nearest', behavior: 'smooth'});
-    }
-
-  
-    /**
-     * Activa el autoplay de la comment
-     */
-    function playIntervalo() {
-        intervalo = setInterval(pasarReview, TIEMPO_INTERVALO_MILESIMAS_SEG);
-
-        intermitencia_carrusel = true;
-
-    }
-
-    /**
-     * Para el autoplay de la comment
-     */
-    function stopIntervalo() {
-        clearInterval(intervalo);
-        intermitencia_carrusel = false;
-    }
-
-    function startStop(){
-        (intermitencia_carrusel)? stopIntervalo() : playIntervalo();
-    }
-
-    // Eventos
-    
-    $botonStop.addEventListener('click', startStop);
-    // Iniciar
-    playIntervalo();
-/*
-    window.onscroll = function() {
-      document.querySelectorAll(".parallax").forEach(function(el, i) {
-        if(this.elementInViewport(el)) 
-          el.style.backgroundPosition = "50% " + (window.pageYOffset * -0.95 + i * 200) + "px";
-    
-      });
-    }
-    */
+   
 } 

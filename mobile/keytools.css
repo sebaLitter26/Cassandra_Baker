@@ -11,8 +11,31 @@ header img{
 body{
   margin:20px;
   font: 'arial';
-    background-color: #559a90;
-    color: white;
+  background-color: #559a90;
+  color: white;
+}
+
+
+.home{
+    margin: 2em;
+}
+
+.menu a{
+  color:white;
+  text-decoration: none; 
+}
+
+header .menu img{
+  margin: auto;
+  display:block;
+}
+
+header .page {
+  display:none;
+}
+
+header .page img{
+  width: 10px;
 }
   
   
