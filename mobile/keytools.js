@@ -76,6 +76,7 @@ function displayPages(div_name){
 window.onload = function (e) {
 
     this.isDesktop(e);
+    this.displayPages('home');
 
    
 } 

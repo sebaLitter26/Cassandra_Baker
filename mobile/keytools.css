@@ -16,8 +16,14 @@ body{
 }
 
 
+.book, .author{
+  overflow-y: scroll;
+}
+
+
 .home{
-    margin: 2em;
+   /* margin: 2em;*/
+
 }
 
 .menu a{
@@ -46,7 +52,7 @@ header .page img{
     }
 
     .home .horizontal{
-        width:80%;
+       
         margin: auto;
         display:block;
 
@@ -54,7 +60,7 @@ header .page img{
 
     .home .horizontal img{
        
-        max-width: 300px;
+        max-width: 100%;
         width: -webkit-fill-available;
     }
   }
@@ -78,3 +84,89 @@ header .page img{
   }
 
 
+  /*THE BOOK*/
+
+.book ul{
+  background: #72c1b3;
+    padding: 1em auto;
+    padding-inline-start: 4px;
+}
+
+.book ul li{
+  padding: 0.4em;
+  margin-left: 5em;
+  font: 0.9em 'arial';
+}
+
+.book ul img{
+  float: left;
+  height: 200px;
+  padding: 10px;
+}
+
+  /*THE AUTHOR*/
+
+
+/*PURCHASE*/
+
+.purchase{
+  text-align: center;
+  display:none;
+  /*padding: 70px;*/
+}
+
+.purchase .container_purchase_img{
+  padding: 20px ;
+  background: #42726a;
+  margin-bottom: 10px;
+  height: 50px;
+  
+  width: max-content;
+  
+  width: auto;
+}
+
+.purchase .container_purchase_img p{
+  font: 0.8em 'arial';
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.purchase .container_purchase_img p:hover{
+  overflow: visible;
+}
+
+.purchase .container_purchase_img img{
+     max-width: 100%;
+}
+/*FOOTER*/
+
+
+/*
+footer .contactIcons {
+  position: absolute;
+  transform: translate(100px, 90px);
+
+}
+*/
+
+.contact .container_buttons button{
+  color: white;
+    font: 1.1em 'arial';
+    text-align: justify;
+    margin: 20px auto;
+ /* width: 340px;*/
+}
+
+.contact .container_buttons img{
+  
+  width: 40px;
+}
+
+#explodeButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+}
