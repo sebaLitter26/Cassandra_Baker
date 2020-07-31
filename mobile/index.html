@@ -15,12 +15,13 @@
         <header>
             
             <div class="menu"> 
-                <img onclick="displayPages('menu')" src="../assets/menu_icon.png" alt="menu">
+                <img onclick="toggle_menu('menu')" src="../assets/menu_icon.png" alt="menu">
             </div>
 
-            <div class="page"> 
-                 <img onclick="displayPages('page')" src="../assets/flecha_cerrado_contenidos.png" alt="menu">
-                <h1>The Book</h1>
+            <div class="page" hidden> 
+                 <img onclick="displayPages('menu')" src="../assets/flecha_cerrado_contenidos.png" alt="menu">
+                <h3>The Book</h3>
+                <hr>
             </div>
         </header>
     <div class="body">
@@ -72,7 +73,7 @@
         
             <div class="book">
                 
-                    <p class="first_p">
+                    <p>
                         <b>Key Tools of Writing and Research</b> is a guide for the
                         student on writing effective academic papers. Written in
                         easy-to-understand language, this text takes a practical

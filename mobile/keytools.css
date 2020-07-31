@@ -1,6 +1,6 @@
 
 header{
-  height: 20%;
+  /*height: 20%;*/
 }
 
 header img{
@@ -9,10 +9,13 @@ header img{
 }
 
 body{
-  margin:20px;
+  
+  margin:0;
   font: 'arial';
   background-color: #559a90;
   color: white;
+  margin: 20px ;
+
 }
 
 
@@ -29,6 +32,7 @@ body{
 .menu a{
   color:white;
   text-decoration: none; 
+  font: 0.9em 'arial';
 }
 
 header .menu img{
@@ -36,12 +40,21 @@ header .menu img{
   display:block;
 }
 
-header .page {
-  display:none;
+header .page h3{
+  font: 0.9em 'arial' ;
+  font-weight: bold;
+  padding-top: 5px;
+  margin-left: 30px;
 }
 
 header .page img{
   width: 10px;
+  float: left;
+  /*padding-top: 5px;*/
+}
+
+hr {
+  border: 1px solid white;
 }
   
   
@@ -88,8 +101,11 @@ header .page img{
 
 .book ul{
   background: #72c1b3;
-    padding: 1em auto;
-    padding-inline-start: 4px;
+  padding: 1em auto;
+  padding-inline-start: 4px;
+  
+  border-radius: 20px;
+
 }
 
 .book ul li{
@@ -114,19 +130,14 @@ header .page img{
 
 .purchase{
   text-align: center;
-  display:none;
   /*padding: 70px;*/
 }
 
 .purchase .container_purchase_img{
   padding: 20px ;
   background: #42726a;
-  margin-bottom: 10px;
-  height: 50px;
-  
-  width: max-content;
-  
-  width: auto;
+  margin-bottom: 15px;
+  height: -webkit-fill-available;
 }
 
 .purchase .container_purchase_img p{
