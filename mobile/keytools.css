@@ -1,4 +1,23 @@
 
+@font-face {
+  font-family: 'mrsBlackfortRegular';
+  src: local('mrsBlackfortRegular'),
+          url('./assets/MrsBlackfortRegular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'gabriolaFontDownload';
+src: local('gabriolaFontDownload'),
+      url('./assets/gabriolaFontDownload.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'PosterBodoniCGATT';
+src: local('PosterBodoniCGATT'),
+      url('./assets/PosterBodoniCGATT.ttf') format('truetype');
+}
+
+
 header{
   /*height: 20%;*/
   margin: 20px ;
@@ -15,7 +34,7 @@ body{
   font: 'arial';
   /*background-color: #559a90;*/
   background-image: url("./assets/header.png") ;
-  
+  background-size: cover;
   color: white;
   
 
