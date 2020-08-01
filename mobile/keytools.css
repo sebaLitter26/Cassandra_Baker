@@ -59,9 +59,8 @@ hr {
   
   
   @media screen and (orientation: portrait) {
-    .home .vertical{
+    .home .vertical {
       display:none;
-      
     }
 
     .home .horizontal{
@@ -81,17 +80,23 @@ hr {
   /* For landscape, we want the tool bar stick on the left */
   
   @media screen and (orientation: landscape) {
-    .home .horizontal{
+    .home .horizontal , header .menu{
       display:none;
     }
-    .home .vertical{
-      max-width: 300px;
-        
+    .home .vertical .description{
+      margin-left: 250px;
+      padding: 44px;
     }
     .home .vertical img{
         width: -webkit-fill-available;
         max-width: 230px;
         float: left;
+    }
+
+    .home .vertical{
+      margin: 9% 40px;
+
+      background: #72c1b3;
     }
 
   }
