@@ -33,13 +33,9 @@ body{
 
 .menu{
   margin: 20px ;
-}
-
-.menu a{
-  color:white;
-  text-decoration: none; 
   font: 0.9em 'arial';
 }
+
 
 header .menu img{
   margin: 10px auto;
