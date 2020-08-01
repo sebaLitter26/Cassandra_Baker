@@ -1,6 +1,7 @@
 
 header{
   /*height: 20%;*/
+  margin: 20px ;
 }
 
 header img{
@@ -14,7 +15,7 @@ body{
   font: 'arial';
   background-color: #559a90;
   color: white;
-  margin: 20px ;
+  
 
 }
 
@@ -26,7 +27,12 @@ body{
 
 .home{
    /* margin: 2em;*/
+   margin: 20px ;
 
+}
+
+.menu{
+  margin: 20px ;
 }
 
 .menu a{
@@ -36,7 +42,7 @@ body{
 }
 
 header .menu img{
-  margin: auto;
+  margin: 10px auto;
   display:block;
 }
 
@@ -55,6 +61,10 @@ header .page img{
 
 hr {
   border: 1px solid white;
+}
+
+.home span{
+  font: 0.9em 'arial' ;
 }
   
   
@@ -104,12 +114,17 @@ hr {
 
   /*THE BOOK*/
 
+  .book p{
+    font: 0.9em 'arial' ;
+    margin: 20px ;
+  }
+
 .book ul{
   background: #72c1b3;
   padding: 1em auto;
   padding-inline-start: 4px;
-  
-  border-radius: 20px;
+  padding: 1em;
+ /*border-radius: 20px;*/
 
 }
 
@@ -129,18 +144,44 @@ hr {
 
   .author{
     font: 0.9em 'arial';
+    margin: 20px ;
+  }
+
+  .author h4{
+    margin-block-end:0;
+  }
+
+  .author p{
+    margin-block-start: 0em;
+  }
+
+
+  /*ANCILLARY MATERIAL*/
+
+  .iframe a img{
+    max-width: 100%;
+  }
+
+  
+  .iframe p{
+    font: 0.9em 'arial' ;
+  }
+
+  .iframe{
+    margin: 20px ;
   }
 
 /*PURCHASE*/
 
 .purchase{
   text-align: center;
+  margin: 20px ;
   /*padding: 70px;*/
 }
 
 .purchase .container_purchase_img{
   padding: 20px ;
-  background: #42726a;
+  /*background: #42726a;*/
   margin-bottom: 15px;
   height: -webkit-fill-available;
 }
@@ -169,6 +210,10 @@ footer .contactIcons {
 
 }
 */
+
+.contact{
+  margin: 20px ;
+}
 
 .contact .container_buttons button{
   color: white;
