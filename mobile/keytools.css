@@ -14,7 +14,8 @@ body{
   margin:0;
   font: 'arial';
   /*background-color: #559a90;*/
-  background-image: url("../assets/header.png");
+  background-image: url("./assets/header.png") ;
+  
   color: white;
   
 
