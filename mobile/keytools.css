@@ -60,7 +60,8 @@ hr {
 }
 
 .home span{
-  font: 0.9em 'arial' ;
+  font: 1em 'arial' ;
+  font-weight: bold;
 }
   
   
@@ -81,6 +82,7 @@ hr {
         max-width: 100%;
         width: -webkit-fill-available;
     }
+
   }
   
   /* For landscape, we want the tool bar stick on the left */
@@ -123,9 +125,11 @@ hr {
 
   .book p img{
        
-    max-width: 100%;
+    max-width: 80%;
     width: -webkit-fill-available;
     padding-bottom: 10px;
+    margin: auto;
+    display: block;
 }
 
   .book p{
