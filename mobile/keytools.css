@@ -121,6 +121,13 @@ hr {
 
   /*THE BOOK*/
 
+  .book p img{
+       
+    max-width: 100%;
+    width: -webkit-fill-available;
+    padding-bottom: 10px;
+}
+
   .book p{
     font: 0.9em 'arial' ;
     margin: 20px ;
