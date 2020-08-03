@@ -150,6 +150,7 @@ hr {
     .home .vertical .description{
       margin-left: 250px;
       padding: 44px;
+      font: 0.9em 'arial';
     }
     /*
     .home .vertical img{
