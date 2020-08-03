@@ -2,19 +2,19 @@
 @font-face {
   font-family: 'mrsBlackfortRegular';
   src: local('mrsBlackfortRegular'),
-          url('./assets/MrsBlackfortRegular.ttf') format('truetype');
+          url('../assets/MrsBlackfortRegular.ttf') format('truetype');
 }
 
 @font-face {
 font-family: 'gabriolaFontDownload';
 src: local('gabriolaFontDownload'),
-      url('./assets/gabriolaFontDownload.ttf') format('truetype');
+      url('../assets/gabriolaFontDownload.ttf') format('truetype');
 }
 
 @font-face {
 font-family: 'PosterBodoniCGATT';
 src: local('PosterBodoniCGATT'),
-      url('./assets/PosterBodoniCGATT.ttf') format('truetype');
+      url('../assets/PosterBodoniCGATT.ttf') format('truetype');
 }
 
 
@@ -32,12 +32,9 @@ body{
   
   margin:0;
   font: 'arial';
-  /*background-color: #559a90;*/
-  background-image: url("./assets/header.png") ;
-  background-size: cover;
+  background-color: #559a90;
   color: white;
   
-
 }
 
 
@@ -48,14 +45,13 @@ body{
 
 .home{
    /* margin: 2em;*/
-   margin: 20px ;
+   
 
 }
 
 .menu{
   margin: 20px ;
   font: 0.9em 'arial';
-  
 }
 
 
@@ -81,10 +77,34 @@ hr {
   border: 1px solid white;
 }
 
-.home span{
-  font: 1em 'arial' ;
-  font-weight: bold;
+
+.home .horizontal .text_tape .title_header_first{
+  font: 1.2em 'mrsBlackfortRegular';
+  position: absolute;
+  padding-left: 25%;
+  padding-top: 10px;
+  
 }
+
+.home .horizontal .text_tape .title_header_second{
+    font-weight: bold;
+    font-family: 'PosterBodoniCGATT';
+    padding-top: 54px;
+    
+    
+}
+
+.home .horizontal .text_tape .title_header_third{
+  font-family:  'gabriolaFontDownload';
+  padding-top: 20px;
+  /* position: absolute; */
+  /* bottom: -13%; */
+  /* right: -10%; */
+  /* transform: translate(-50%, -50%); */
+    
+}
+
+
   
   
   @media screen and (orientation: portrait) {
@@ -103,6 +123,20 @@ hr {
        
         max-width: 100%;
         width: -webkit-fill-available;
+    }
+
+    .home .horizontal .text_tape{
+      
+      position: relative;
+      text-align: center;
+      font-size: 2em;
+      bottom: 0;
+      height: 160px;
+      /* margin: 23px auto; */
+      background-position: bottom;
+    
+      background-image: url("../assets/header.png") ;
+      background-size: cover;
     }
 
   }
